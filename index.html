@@ -7,12 +7,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>DNCL 実行環境</h1>
-    <textarea id="code" placeholder="ここにDNCLコードを記述してください"></textarea>
-    <br>
+    <h1>DNCL 学習環境</h1>
+    <div id="editor">
+        <div id="line-numbers"></div>
+        <textarea id="code" placeholder="ここにDNCLコードを記述してください"></textarea>
+    </div>
     <button onclick="runCode()">実行</button>
+    <button onclick="loadSample()">サンプルコード</button>
     <h2>結果:</h2>
     <pre id="result"></pre>
+    <h2>エラーと修正案:</h2>
+    <pre id="errors"></pre>
     <script src="script.js"></script>
 </body>
 </html>
