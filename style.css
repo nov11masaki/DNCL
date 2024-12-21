@@ -2,15 +2,43 @@ body {
     font-family: Arial, sans-serif;
     margin: 20px;
     background-color: #f9f9f9;
+    color: #333;
 }
-textarea {
-    width: 100%;
-    height: 300px;
+h1, h2 {
     margin-bottom: 10px;
 }
-pre {
+#editor {
+    display: flex;
+    border: 1px solid #ccc;
     background: #f4f4f4;
+    margin-bottom: 10px;
+    font-family: monospace;
+}
+#line-numbers {
+    background: #e9e9e9;
     padding: 10px;
+    text-align: right;
+    border-right: 1px solid #ccc;
+}
+#line-numbers div {
+    height: 1.6em;
+}
+textarea {
+    flex: 1;
+    height: 300px;
+    border: none;
+    padding: 10px;
+    resize: none;
+    font-family: monospace;
+    line-height: 1.6em;
+}
+textarea:focus {
+    outline: none;
+}
+pre {
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
     white-space: pre-wrap;
     word-wrap: break-word;
 }
